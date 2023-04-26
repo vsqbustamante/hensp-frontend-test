@@ -1,4 +1,4 @@
-# HENSP Backend Test
+# HENSP Frontend Test
 
 ### Resumen
 
@@ -12,7 +12,7 @@ Tienes un máximo de **3 horas** para la prueba.
 
 - Como invitado, quiero iniciar sesión dentro de la plataforma.
 
-- Como invitado, quiero obtener una lista de todos los medicamentos disponibles en el área de farmacia, para poder consultar el nombre, proveedor, costo y precio de venta dentro de una tabla.
+- Como usuario autenticado, quiero obtener una lista de todos los medicamentos disponibles en el área de farmacia, para poder consultar el nombre, proveedor, costo y precio de venta dentro de una tabla.
 
 - Como usuario autenticado, quiero agregar nuevos medicamentos al área de farmacia.
 
@@ -46,6 +46,8 @@ La siguiente lista de requerimientos únicamente incrementan tu puntaje, no pasa
 - Utiliza _conventional commits_ para escribir tus mensajes en git.
 - Diseño responsive.
 - Utiliza Typescript.
-- Filtro de búsqueda por nombre en lista de medicamentos _(doble punto si funciona con keywords)_.
-- Manejo de errores 400 (bad payload) y 401 (unauthorized).
+- Implementa paginación.
+- Utiliza libreria para manejo de estado.
+- Filtro de búsqueda por nombre en lista de medicamentos _(puedes usar limit=999 para obtenerlos todos, doble punto si funciona con keywords)_
+- Manejo de errores 400 (bad payload), 401 (unauthorized) y 403 (forbidden).
 - Tests unitarios o e2e.
