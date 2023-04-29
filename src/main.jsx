@@ -7,7 +7,8 @@ import {apiSlice} from './api/apiSlice';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  // Chris 1: que es StrictMode?
+  <React.StrictMode> 
     <ApiProvider api={apiSlice}>
       <App />
     </ApiProvider>

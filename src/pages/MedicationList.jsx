@@ -6,10 +6,11 @@ function MedicationList() {
 
   const navigate = useNavigate();
 
-  const {data, isError, isLoading, error} = useGetMedicationsQuery();
+  const {data, isError, isLoading, error} = useGetMedicationsQuery(); // Chris 1: cual es la diferencia entre mutation y query?
 
   if (isLoading) return <div>Loading...</div>;
   if (isError) {
+    // Chris 2: Entiendo que esto es para manejar el error de autenticacion, pero existe una mejor manera de hacerlo?
     navigate('/login');
     return null;
   }

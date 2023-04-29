@@ -1,5 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
+// Chris 1: Por que usar esto en vez de axios?
+
 export const apiSlice = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
@@ -41,7 +43,7 @@ export const apiSlice = createApi({
     }),
     updateMedication: builder.mutation({
       query: (updatedMedication) => ({
-        url: `/medicamentos/${medicate.id}`,
+        url: `/medicamentos/${medicate.id}`, // Chris 2: medicate no existe
         method: "PUT",
         body: updatedMedication,
       }),
@@ -56,6 +58,8 @@ export const apiSlice = createApi({
     }),
   }),
 });
+
+// Chris 3: Podrias explicarme que haces aca?
 
 export const {
   useGetMedicationsQuery,
