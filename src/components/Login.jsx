@@ -8,7 +8,7 @@ const defaultDatos = {
   password: ''
 }
 
-export const Login = () => {
+export const Login = () => { // Chris 3: Como refactorizarias este componente?
 
   const [datosUser, setDatosUser] = useState(defaultDatos)
   const { createPost, token } = useContext(DataContext)
@@ -20,9 +20,9 @@ export const Login = () => {
         autoComplete="off"
         onSubmit={(e) => {
           e.preventDefault();
-          if (Campos.usuario === true && Campos.password === true) {
+          if (Campos.usuario === true && Campos.password === true) { // Chris 1: Como manejarias un formulario completo?
             createPost(datosUser);
-            setDatosUser(defaultDatos);
+            setDatosUser(defaultDatos); // Chris 2: Cual es el proposito de este paso?
             Campos.usuario = false;
             Campos.password = false;
 

@@ -31,7 +31,7 @@ export const Dashboard = () => {
 
   /* - Comentario: validamos el token - */
   if (token === null) {
-    //location.href = 'http://localhost:5173/'
+    //location.href = 'http://localhost:5173/' // Chris 1: Por que esto esta comentado?
   }
 
   return (
@@ -115,6 +115,8 @@ export const Dashboard = () => {
           </table>
         </div>
       </div>
+
+      {/* Chris 2: Como harias para que el Modal sea reutilizable en toda la aplicacion? */}
 
       <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog">

@@ -12,7 +12,7 @@ export const DataProvider = ({ children }) => {
     /* - Comentario: guardamos el token  - */
     const [token, setToken] = useState(null);
 
-    const createPost = (_body) => {
+    const createPost = (_body) => { // Chris 1: Como harias este paso con async await?
         fetch(baseURL, {
             method: 'POST', // or 'PUT'
             body: JSON.stringify(_body),
@@ -33,7 +33,7 @@ export const DataProvider = ({ children }) => {
                     setDatosUsuario(response.user);
                     setToken(response.token);
                     /** Una ves que ya guardamos el token y usuario con su nombre, redirigimos al dashboard */
-                    location.href = 'http://localhost:5173/dashboard'
+                    location.href = 'http://localhost:5173/dashboard' // Chris 2: Esta es la mejor forma de redirigir?
                 }
             });
 
