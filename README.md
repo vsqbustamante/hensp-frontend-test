@@ -32,12 +32,14 @@ Nota: Durante el login recibirás un token, éste debe ser enviado en los endpoi
 
 ### Entregable
 
-Al finalizar la prueba, deberás hacer un Pull Request en el repositorio. Si tu username de Github no puede ser fácilmente reconocible, por favor coloca tu nombre en la descripción. 
+Al finalizar la prueba, deberás grabar un vídeo explicando el API que has desarrollado y deberás hacer un Pull Request en el repositorio. Si tu username de Github no puede ser fácilmente reconocible, por favor coloca tu nombre en la descripción. 
 
 Puedes agregar toda la información que consideres ideal para el PR.
 
-_* Recuerda que para hacer un PR debes hacer un fork a este repositorio y clonarlo. Debes trabajar sobre éste para que sea posible_
-
+Consejos para el vídeo:
+- Intenta ser conciso en tus explicaciones e identifica las partes de tu código de las que sientas más orgullo.
+- Explica el motivo de tus decisiones al escoger tecnologías, arquitectura, validaciones, etc. Considera dar los pros y contras de lo que hiciste.
+- Explica más lógica de negocio que tecnicismos.
 
 ### Puntos Extras
 
