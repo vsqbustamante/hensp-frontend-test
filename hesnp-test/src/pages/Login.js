@@ -23,7 +23,7 @@ const Login = () => {
                 const token = response.data?.token;
                 if (token) {
                     localStorage.setItem('token', token);
-                    navigate('/medicamentos'); // Redirige a la página de medicamentos
+                    navigate('/medicamentos');
                 } else {
                     alert('Error: no se recibió el token de autenticación.');
                 }
@@ -42,12 +42,12 @@ const Login = () => {
                 <Card.Body>
                     <div className="mb-4">
                         <i className="fas fa-sign-in-alt login-icon"></i>
-                        <h3 className="mb-1">Welcome!</h3>
-                        <p className="text-muted">Sign in to your account</p>
+                        <h3 className="mb-1">¡Bienvenido!</h3>
+                        <p className="text-muted">Inicia sesión con tus credenciales</p>
                     </div>
                     <Form onSubmit={handleSubmit}>
                         <Form.Group className="mb-4">
-                            <Form.Label>Name</Form.Label>
+                            <Form.Label>Usuario: </Form.Label>
                             <InputGroup>
                                 <InputGroup.Text>
                                     <i className="fas fa-user"></i>
@@ -57,13 +57,13 @@ const Login = () => {
                                     name="usuario"
                                     value={formData.usuario}
                                     onChange={handleInputChange}
-                                    placeholder="Enter your name"
+                                    placeholder="Ingresa tu usuario"
                                 />
                             </InputGroup>
                             {validator.message('usuario', formData.usuario, 'required')}
                         </Form.Group>
                         <Form.Group className="mb-4">
-                            <Form.Label>Password</Form.Label>
+                            <Form.Label>Contraseña: </Form.Label>
                             <InputGroup>
                                 <InputGroup.Text>
                                     <i className="fas fa-lock"></i>
@@ -73,13 +73,13 @@ const Login = () => {
                                     name="password"
                                     value={formData.password}
                                     onChange={handleInputChange}
-                                    placeholder="Enter your password"
+                                    placeholder="Ingresa tu contraseña"
                                 />
                             </InputGroup>
                             {validator.message('password', formData.password, 'required')}
                         </Form.Group>
                         <Button variant="primary" type="submit" className="w-100 btn-lg mt-3">
-                            Login
+                            Iniciar Sesión
                         </Button>
                     </Form>
                 </Card.Body>

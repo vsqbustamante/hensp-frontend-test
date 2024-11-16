@@ -35,13 +35,15 @@
     border: none;
     color: #6c757d;
     margin-right: 0.5rem;
-}
+    }
 
-.form-control {
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
-    border-radius: 8px; 
-}
+    .form-control {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        border-radius: 8px;
+        width: calc(94% - 2.5rem); 
+        display: inline-block;
+    }
 
 button.btn-lg {
     padding: 0.75rem;
